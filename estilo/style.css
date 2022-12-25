@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+
+
+:root {
+    --fonte1: 'Anton', sans-serif;
+    --fonte2: 'Oswald', sans-serif;
+    --fonte3: 'Sriracha', cursive;
+    --fonte4: Arial, Helvetica, sans-serif;
+    --fonte5: 'Passion One', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    
+}
+
+html, body {
+    font-family: var(--fonte4);
+    min-height: 100vh;
+    background-color: darkgray;
+    
+}
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte4);
+    font-size: 10vh;
+}
+header > p {
+    padding-bottom: 50px;
+}
+p {
+    padding-left: 10px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+header a, footer a {
+    text-decoration: underline;
+}
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3vh;
+}
+section > p {
+    padding-bottom: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+section.imagem {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.349);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    background-attachment: fixed;
+}
+section.imagem > p {
+    width: 100em;
+    background-color: rgba(0, 0, 0, 0.247);
+    box-shadow: inset 6px 6px 13px 0px #00000013;
+    
+}
+section#img01 {
+    background-image: url(../imagens/album\ foto.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+section#img02 {
+    background-image: url(../imagens/novo\ album.jpg);
+    background-size: cover;
+}
+section#img03 {
+    background-image: url(../imagens/slash.jpg);
+    background-size: cover;
+}
+section#img04 {
+    background-image: url(../imagens/guns\ n\ roses\ piratas.jpg);
+    background-size: contain;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-family: var(--fonte2);
+}
